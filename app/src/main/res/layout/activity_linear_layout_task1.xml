@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".LinearLayoutTask1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="55sp"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:fontFamily="serif-bold"
+        android:text="@string/zinenic" />
+
+    <LinearLayout
+        android:layout_marginTop="60sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailfield"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="20sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#212121"
+            tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/Passwordfield"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#212121"
+            tools:ignore="VisualLintTextFieldSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+
+            android:background="@drawable/btnr"
+
+            android:text="@string/login"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="#000000"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgbtnfb"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/gradient"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/fb"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imgbtntwitter"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/gradient"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/twitter"
+            tools:ignore="DuplicateIds,ImageContrastCheck" />
+    </LinearLayout>
+
+</LinearLayout>

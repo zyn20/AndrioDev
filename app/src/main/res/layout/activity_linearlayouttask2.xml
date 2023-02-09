@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".linearlayouttask2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:fontFamily="serif-bold"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/white"
+
+
+        android:text="@string/welcome_home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="40dp"
+            android:padding="25dp"
+
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="29px"
+            android:layout_weight="0"
+            android:background="@drawable/btnr"
+            app:srcCompat="@drawable/living"
+            tools:ignore="ContentDescription,InefficientWeight,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0"
+            android:layout_marginRight="40px"
+
+
+            android:background="@drawable/btnr"
+            android:padding="25dp"
+            app:srcCompat="@drawable/smallbed"
+            tools:ignore="ContentDescription,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0"
+            android:padding="25dp"
+            android:background="@drawable/btnr"
+
+            app:srcCompat="@drawable/kitchen"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60px"
+
+
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:text="@string/bedroom"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="PxUsage,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/living_room"
+
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="@string/kitchen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="29px"
+            android:background="@drawable/btnr"
+
+            app:srcCompat="@drawable/bathroom"
+            tools:ignore="ContentDescription,ImageContrastCheck,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_height="wrap_content"
+      android:background="@drawable/btnr"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="70px"
+            app:srcCompat="@drawable/kidsroom"
+            tools:ignore="ContentDescription,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="40px"
+            android:layout_marginLeft="60px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnr"
+            app:srcCompat="@drawable/diningroom"
+            tools:ignore="ContentDescription,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="30px"
+            android:text="@string/bathroom"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="PxUsage,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kids_room"
+            android:paddingLeft="20px"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="PxUsage,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dining_room"
+            android:textColor="@color/white"
+            android:paddingLeft="20px"
+            android:textSize="22sp"
+            tools:ignore="PxUsage,RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_purple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btnr"
+                app:srcCompat="@drawable/lightcontrol"
+                tools:ignore="ContentDescription,ImageContrastCheck,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btnr"
+                app:srcCompat="@drawable/power"
+                tools:ignore="ContentDescription,PxUsage,RtlHardcoded,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200px"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnr"
+                android:text="@string/togbtn"
+                tools:ignore="DuplicateSpeakableTextCheck,PxUsage,RtlHardcoded,TextContrastCheck" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200px"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnr"
+                android:text="@string/togglebuttonnn"
+                tools:ignore="PxUsage,RtlHardcoded,TextContrastCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
