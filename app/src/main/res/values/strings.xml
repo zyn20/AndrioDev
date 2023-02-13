@@ -35,4 +35,8 @@
     <string name="togglebutton">ToggleButton</string>
     <string name="togbtn">ToggleButton</string>
     <string name="togglebuttonnn">ToggleButton</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="this_is_second_activity">This is Second Activity</string>
+    <string name="save_pref">Save Pref</string>
+    <string name="show_pref">Show Pref</string>
 </resources>
