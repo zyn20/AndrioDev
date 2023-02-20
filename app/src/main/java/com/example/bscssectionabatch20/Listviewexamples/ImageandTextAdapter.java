@@ -20,7 +20,7 @@ public class ImageandTextAdapter extends ArrayAdapter<String> {
     String [] Text;
      int [] Image;
 
-    public ImageandTextAdapter(@NonNull  int resource, Activity activity, String[] name, String[] text, int[] image) {
+    public ImageandTextAdapter(@NonNull Activity activity, String[] name, String[] text, int[] image) {
         super(activity, R.layout.imageandtext,text);
         this.activity = activity;
         Name = name;
