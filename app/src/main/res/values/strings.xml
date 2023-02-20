@@ -42,4 +42,14 @@
     <string name="todo">TODO</string>
     <string name="zain">Zain</string>
     <string name="textview">TextView</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="cnic">Cnic</string>
+    <string name="phone">Phone</string>
+    <string name="sgpa">SGPA</string>
+    <string name="cgpa">CGPA</string>
+    <string name="enter_cnic">Enter Cnic</string>
+    <string name="enter_sgpa">Enter SGPA</string>
+    <string name="enter_cgpa">Enter CGPA</string>
+    <string name="save">Save</string>
 </resources>

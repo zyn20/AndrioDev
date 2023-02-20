@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/expressocoloe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Tasktwo.studentactivityone">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:paddingLeft="20sp"
+        android:text="@string/name"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#F1E6E6"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/tasktwonameid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/tasktwonameid"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/darkocean"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp"
+        android:shadowColor="#ECE6E6"
+        android:text="@string/enter_name"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#E1D6D6"
+        android:textColorHint="@color/white"
+        android:textColorLink="#F8F4F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints=""
+        tools:ignore="LabelFor,RtlHardcoded,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+
+        android:text="@string/cnic"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#F1E6E6"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/tasktwocnicid"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+
+        android:gravity="center"
+        android:text="@string/phone"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#F1E6E6"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/tasktwophoneid"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="101dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+
+        android:gravity="center"
+        android:text="@string/sgpa"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#F1E6E6"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/tasktwospgaid"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/cgpa"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#F1E6E6"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/tasktwocpgaid"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/tasktwocnicid"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/darkocean"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp"
+        android:text="@string/enter_cnic"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#E1D6D6"
+        android:textColorHint="@color/white"
+        android:textColorLink="#F8F4F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasktwonameid"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/tasktwophoneid"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/darkocean"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp"
+        android:text="Enter Phone"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#E1D6D6"
+        android:textColorHint="@color/white"
+        android:textColorLink="#F8F4F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasktwocnicid"
+        tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/tasktwospgaid"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/darkocean"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp"
+        android:text="@string/enter_sgpa"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#E1D6D6"
+        android:textColorHint="@color/white"
+        android:textColorLink="#F8F4F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasktwophoneid"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/tasktwocpgaid"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/darkocean"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp"
+        android:text="@string/enter_cgpa"
+
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#E1D6D6"
+        android:textColorHint="@color/white"
+        android:textColorLink="#F8F4F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasktwospgaid"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="243dp"
+        android:layout_height="72dp"
+        android:onClick="SaveBtn"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btnr"
+        android:backgroundTint="@color/teal"
+        android:text="@string/save"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasktwocpgaid" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

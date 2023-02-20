@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class SharedPreferenceExample1 extends AppCompatActivity {
 
     SharedPreferences sharedPreferences;
-  //  TextView textView;
+    //TextView textView;
     ListView listview;
 
     @SuppressLint("MissingInflatedId")
@@ -27,7 +27,7 @@ public class SharedPreferenceExample1 extends AppCompatActivity {
         setContentView(R.layout.activity_shared_preference_example1);
         sharedPreferences = getSharedPreferences("MyFile",0);
         listview = findViewById(R.id.mylistviewsharedpref);
-       // textView = findViewById(R.id.txtsharedprefexample1);
+        //textView = findViewById(R.id.txtsharedprefexample1);
 
 
     }
@@ -35,7 +35,7 @@ public class SharedPreferenceExample1 extends AppCompatActivity {
     public void Show_My_Preference(View view) {
         int a = sharedPreferences.getInt("A",0);
         String b= sharedPreferences.getString("B",null);
-       // textView.setText(String.valueOf(a) + " " + b);
+        //textView.setText(String.valueOf(a) + " " + b);
 
 
 

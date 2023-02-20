@@ -15,4 +15,13 @@
 
     <color name="start_color">#636363</color>
     <color name="end_color">#a2ab58</color>
+
+    <color name="sc">#ad5389</color>
+    <color name="ec">#3c1053</color>
+    <color name="broken">#d9a7c7</color>
+    <color name="heart">#fffcdc</color>
+    <color name="dark">#373B44</color>
+    <color name="ocean">#4286f4</color>
+
+
 </resources>
