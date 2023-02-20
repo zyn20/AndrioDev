@@ -39,4 +39,7 @@
     <string name="this_is_second_activity">This is Second Activity</string>
     <string name="save_pref">Save Pref</string>
     <string name="show_pref">Show Pref</string>
+    <string name="todo">TODO</string>
+    <string name="zain">Zain</string>
+    <string name="textview">TextView</string>
 </resources>
