@@ -1,6 +1,9 @@
 package com.example.bscssectionabatch20.PermissionsExamples;
 
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +23,8 @@ public class PermissionExample1 extends AppCompatActivity {
     }
 
     public void CheckPermission(View view) {
+        int result_P1 = ContextCompat.checkSelfPermission(this,ACCESS_FINE_LOCATION);
         
+
     }
 }
