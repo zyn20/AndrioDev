@@ -52,4 +52,5 @@
     <string name="enter_sgpa">Enter SGPA</string>
     <string name="enter_cgpa">Enter CGPA</string>
     <string name="save">Save</string>
+    <string name="download_image">Download Image</string>
 </resources>
