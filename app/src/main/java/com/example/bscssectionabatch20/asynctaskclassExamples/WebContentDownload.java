@@ -15,6 +15,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.ExecutionException;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -30,8 +31,13 @@ public class WebContentDownload extends AppCompatActivity {
 
     }
 
-    public void Download_Web_content(View view) {
+    public void Download_Web_content(View view) throws ExecutionException, InterruptedException {
 
+        DownloadWeb obj = new DownloadWeb();
+
+        String receive = obj.execute("https://www.google.com/").get();
+        textView.setText(receive);
+        Log.d("Tag","Congrats ! Back in Main");
 
 
 

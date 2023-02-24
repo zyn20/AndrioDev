@@ -8,9 +8,9 @@
 
     <EditText
         android:id="@+id/edtasynctask"
-        android:layout_width="387dp"
-        android:layout_height="505dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="355dp"
+        android:layout_height="439dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
@@ -21,14 +21,14 @@
 
     <Button
         android:id="@+id/button29"
-        android:layout_width="299dp"
-        android:layout_height="90dp"
+        android:layout_width="242dp"
+        android:layout_height="80dp"
         android:layout_marginTop="28dp"
+        android:onClick="Download_Web_content"
         android:text="DownLoad Web Content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="Download_Web_content"
         app:layout_constraintTop_toBottomOf="@+id/edtasynctask"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
