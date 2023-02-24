@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -30,7 +31,7 @@ public class WebContentDownload extends AppCompatActivity {
     }
 
     public void Download_Web_content(View view) {
-        
+
 
 
 
@@ -42,6 +43,7 @@ public class WebContentDownload extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             try {
+                Log.d("Tag","DoInBackground() is in Progress...........");
                 URL url = new URL(strings[0]);
                 HttpsURLConnection connection =(HttpsURLConnection) url.openConnection();
                 connection.connect();
