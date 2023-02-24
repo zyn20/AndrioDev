@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".PermissionsExamples.PermissionExample1">
 
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="317dp"
+        android:layout_height="63dp"
+        android:onClick="RequestForPermission"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/btnr"
+        android:text="@string/request_for_permission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="317dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btnr"
+        android:onClick="CheckPermission"
+        android:text="@string/check_permission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button30" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,4 +53,6 @@
     <string name="enter_cgpa">Enter CGPA</string>
     <string name="save">Save</string>
     <string name="download_image">Download Image</string>
+    <string name="request_for_permission">Request For Permission</string>
+    <string name="check_permission">Check Permission</string>
 </resources>
