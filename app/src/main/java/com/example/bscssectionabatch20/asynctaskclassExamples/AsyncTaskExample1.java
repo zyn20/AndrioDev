@@ -44,6 +44,7 @@ public class AsyncTaskExample1 extends AppCompatActivity {
 
         //... means array like strings
         //This class do the work in background
+
         @Override
         protected Bitmap doInBackground(String... strings) {
 

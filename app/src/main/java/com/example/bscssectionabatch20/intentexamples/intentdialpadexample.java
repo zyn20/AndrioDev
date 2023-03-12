@@ -50,10 +50,6 @@ public class intentdialpadexample extends AppCompatActivity {
         intent.setAction(Intent.ACTION_GET_CONTENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         startActivityForResult(intent, 101);
-
-
-
-
     }
 
     @Override

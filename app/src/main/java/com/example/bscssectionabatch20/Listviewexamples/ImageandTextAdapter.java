@@ -26,7 +26,6 @@ public class ImageandTextAdapter extends ArrayAdapter<String> {
         Name = name;
         Text = text;
         Image = image;
-
     }
 
     @NonNull

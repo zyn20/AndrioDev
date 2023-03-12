@@ -3,11 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    
     android:layout_height="match_parent"
     tools:context=".PermissionsExamples.PermissionExample1">
 
     <Button
         android:id="@+id/button30"
+
+
         android:layout_width="317dp"
         android:layout_height="63dp"
         android:onClick="RequestForPermission"
