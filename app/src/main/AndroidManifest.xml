@@ -233,6 +233,7 @@
         </activity>
 
         <service android:name=".serviceExample.myserviceExampleOne" />
+        <service android:name=".serviceExample.BoundServiceExample.MyBoundService" />
     </application>
 
 </manifest>
