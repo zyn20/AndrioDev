@@ -58,6 +58,8 @@ public class MyBoundService extends Service {
     {
         mediaPlayer.stop();
     }
+
+
     public boolean isPlaying()
     {
        return mediaPlayer.isPlaying();

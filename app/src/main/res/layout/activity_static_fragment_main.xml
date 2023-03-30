@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentExample.staticFragmentExample.StaticFragmentMainActivity">
+
+    <fragment
+        android:id="@+id/contactsfragment"
+        android:layout_width="0dp"
+        class="com.example.bscssectionabatch20.fragmentExample.staticFragmentExample.ContactsFragment"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <fragment
+        android:id="@+id/detailsfragment"
+        class="com.example.bscssectionabatch20.fragmentExample.staticFragmentExample.ContactsDetailFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>
