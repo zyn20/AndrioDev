@@ -18,6 +18,18 @@
         android:theme="@style/Theme.BscsSectionABatch20"
         tools:targetApi="31">
         <activity
+            android:name=".SensorExamples.SensorExampleOneMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SQLiteExample.EditContactActivity"
+            android:exported="false" />
+        <activity
             android:name=".SQLiteExample.NewContactActivity"
             android:exported="false" />
         <activity

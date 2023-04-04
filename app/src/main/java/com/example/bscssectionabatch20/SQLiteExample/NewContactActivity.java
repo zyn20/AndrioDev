@@ -2,6 +2,7 @@ package com.example.bscssectionabatch20.SQLiteExample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -38,5 +39,7 @@ public class NewContactActivity extends AppCompatActivity {
         contact.put("emailAddress",emailAddress.getText().toString());
         contact.put("homeAddress",homeAddress.getText().toString());
         dbQueries.InsertSingleContact(contact);
+        Intent intent = new Intent(this,ContactList.class);
+        startActivity(intent);
     }
 }
