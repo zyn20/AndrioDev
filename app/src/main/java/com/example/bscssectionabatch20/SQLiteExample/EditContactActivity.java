@@ -18,7 +18,6 @@ public class EditContactActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String id = intent.getExtras().getString("id");
         DbQueries dbQueries = new DbQueries(getApplicationContext());
-        dbQueries.getSingleContact(id);
         HashMap<String,String> singleContact =  dbQueries.getSingleContact(id);
 
     }

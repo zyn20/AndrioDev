@@ -1,5 +1,6 @@
 package com.example.bscssectionabatch20.SQLiteExample;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -13,23 +14,8 @@ import java.util.HashMap;
 public class DbQueries extends SQLiteOpenHelper {
     public DbQueries (Context context)
     {
-        super(context,"ContactsDB",null,1);
+        super(context,"ContactDB",null,1);
         Log.d("TAG","Database Created");
-    }
-
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        String SqlTableQuery = "CREATE TABLE CONTACTS("+"_id INTEGER PRIMARY KEY AUTOINCREMENT,"+"firstname TEXT, "+" lastname TEXT,"+"emailAddress TEXT,"+"homeAddress TEXT)";
-                db.execSQL(SqlTableQuery);
-
-        Log.d("TAG","Table Created");
-
-
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
     }
 
     public void InsertSingleContact(HashMap<String, String> contact) {
@@ -37,12 +23,12 @@ public class DbQueries extends SQLiteOpenHelper {
         //it understand content value datastructure
         ContentValues contentValues = new ContentValues();
         contentValues.put("_id",contact.get("_id"));
-        contentValues.put("firstName",contact.get("firstName"));
-        contentValues.put("lastName",contact.get("lastName"));
-        contentValues.put("phoneNumber",contact.get("phoneNumber"));
-        contentValues.put("emailAddress",contact.get("emailAddress"));
-        contentValues.put("homeAddress",contact.get("homeAddress"));
-        Long result  = db.insert("CONTACTS",null,contentValues);
+        contentValues.put("firstName",contact.get("firstname"));
+        contentValues.put("lastName",contact.get("lastname"));
+        contentValues.put("phoneNumber",contact.get("phonenumber"));
+        contentValues.put("emailAddress",contact.get("emailaddress"));
+        contentValues.put("homeAddress",contact.get("homeaddress"));
+        long result  = db.insert("CONTACTS",null,contentValues);
         if (result !=-1)
         {
             Log.d("TAG","New Contact inserted with ID " + result);
@@ -72,8 +58,30 @@ public class DbQueries extends SQLiteOpenHelper {
                 contactList.add(hashMap);
             } while (cursor.moveToNext());
         }
-return contactList;
+        return contactList;
     }
+
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        String SqlTableQuery = "CREATE TABLE CONTACTS("+
+                "_id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +"firstName TEXT, "
+                +" lastName TEXT,"
+                +"emailAddress TEXT,"
+                +"homeAddress TEXT)";
+                db.execSQL(SqlTableQuery);
+
+        Log.d("TAG","Table Created");
+
+
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+
 
     public HashMap<String,String> getSingleContact(String id) {
         SQLiteDatabase db = getReadableDatabase();
@@ -82,8 +90,6 @@ return contactList;
         Cursor cursor = db.rawQuery(Query,null);
         if(cursor.moveToFirst())
         {
-
-
                 hashMap.put("_id",cursor.getString(0));
                 hashMap.put("firstName",cursor.getString(1));
                 hashMap.put("lastName",cursor.getString(2));

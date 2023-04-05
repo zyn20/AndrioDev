@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -247,7 +249,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tablelayoutExample"
+            android:name=".mylayoutExamples.tablelayoutExample"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -256,7 +258,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".linearlayoutExample"
+            android:name=".mylayoutExamples.linearlayoutExample"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

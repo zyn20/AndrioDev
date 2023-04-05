@@ -30,16 +30,17 @@ public class NewContactActivity extends AppCompatActivity {
 
 
     }
-
-    public void SaveIntoDB(View view) {
+    public void SavedataInDB(View view) {
         HashMap<String,String> contact = new HashMap<String,String>();
-        contact.put("firstName",firstName.getText().toString());
-        contact.put("lastName",lastName.getText().toString());
-        contact.put("phoneNumber",phoneNumber.getText().toString());
-        contact.put("emailAddress",emailAddress.getText().toString());
-        contact.put("homeAddress",homeAddress.getText().toString());
+        contact.put("firstname",firstName.getText().toString());
+        contact.put("lastname",lastName.getText().toString());
+        contact.put("phonenumber",phoneNumber.getText().toString());
+        contact.put("emailaddress",emailAddress.getText().toString());
+        contact.put("homeaddress",homeAddress.getText().toString());
         dbQueries.InsertSingleContact(contact);
         Intent intent = new Intent(this,ContactList.class);
         startActivity(intent);
+
+
     }
 }

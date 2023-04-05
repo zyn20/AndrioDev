@@ -17,17 +17,21 @@ import java.util.HashMap;
 public class ContactList extends AppCompatActivity {
     DbQueries dbQueries;
     ListView listView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_list);
         DbQueries dbQueries = new DbQueries(getApplicationContext());
-        listView = findViewById(R.id.ddbblist);
-        ArrayList<HashMap<String,String>> contactsList = new ArrayList<HashMap<String,String>>();
-        contactsList = dbQueries.getAllContacts();
-        SimpleAdapter adapter = new SimpleAdapter(this,contactsList,R.layout.newlayoutmain,new String[]{"id","firstName","lastName","phoneNumber"},
-                new int [] {R.id.txtfirstname,R.id.txtlastname,R.id.txtphone});
+        listView = findViewById(R.id.listdb);
+        ArrayList<HashMap<String,String>> contactList = dbQueries.getAllContacts();
+        SimpleAdapter adapter = new SimpleAdapter(
+                this,
+                contactList,
+                R.layout.newlayoutmain,
+                new String[]{"_id", "firstName", "lastName", "phoneNumber","emailAddress","homeAddress"},
+                new int[]{R.id.txtid, R.id.txtfirstname, R.id.txtlastname, R.id.txtphone,R.id.txtemail,R.id.txthome}
+        );
+
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

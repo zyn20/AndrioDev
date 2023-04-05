@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".SQLiteExample.NewContactActivity"
-    >
+
+ >
 
     <EditText
         android:id="@+id/edtfirstname"
@@ -15,14 +14,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginTop="24dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/firstname"
         android:inputType="textPersonName"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/edtsecondname"
@@ -31,14 +31,16 @@
         android:layout_below="@+id/edtfirstname"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="95dp"
+        android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/secondname"
         android:inputType="textPersonName"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtfirstname"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/edtphonenumber"
@@ -47,14 +49,15 @@
         android:layout_below="@+id/edtsecondname"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="94dp"
+        android:layout_marginTop="28dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/phone_number"
         android:inputType="number|textPersonName"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtsecondname"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/edtemail"
@@ -63,14 +66,15 @@
         android:layout_below="@+id/edtphonenumber"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="99dp"
+        android:layout_marginTop="28dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textWebEmailAddress|textPersonName|textEmailSubject"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtphonenumber"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/edthomeaddress"
@@ -79,30 +83,32 @@
         android:layout_below="@+id/edtemail"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="97dp"
+        android:layout_marginTop="16dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/home_address"
         android:inputType="textPersonName"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnsave"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
+        android:layout_width="129dp"
+        android:layout_height="52dp"
         android:layout_below="@+id/edthomeaddress"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:onClick="SavedataInDB"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="167dp"
-        android:minHeight="48dp"
-        android:onClick="SaveIntoDB"
-        android:text="@string/savebtn"
-        tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
+        android:layout_marginTop="28dp"
+        android:text="@string/buttonsavetosql"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edthomeaddress"
+        app:layout_constraintVertical_bias="0.17" />
 
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
