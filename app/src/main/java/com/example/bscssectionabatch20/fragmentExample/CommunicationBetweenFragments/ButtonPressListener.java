@@ -3,8 +3,6 @@ package com.example.bscssectionabatch20.fragmentExample.CommunicationBetweenFrag
 public interface ButtonPressListener {
     public interface OnButtonPressListener{
         public void onButtonPressed(String Msg);
-
-
     }
 
 }

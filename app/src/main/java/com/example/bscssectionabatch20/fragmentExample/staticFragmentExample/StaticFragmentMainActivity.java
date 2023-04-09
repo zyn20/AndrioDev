@@ -27,7 +27,6 @@ public class StaticFragmentMainActivity extends AppCompatActivity implements Con
         {
             detailFragment.ContactIndex(index);
 
-
         }
 
 

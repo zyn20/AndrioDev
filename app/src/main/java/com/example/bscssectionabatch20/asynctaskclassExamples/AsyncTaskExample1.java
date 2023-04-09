@@ -2,6 +2,7 @@ package com.example.bscssectionabatch20.asynctaskclassExamples;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -22,18 +23,26 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class AsyncTaskExample1 extends AppCompatActivity {
 
-    ImageView imageView;
+    ImageView img1,img2,img3,img4;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_async_task_example1);
-        imageView=findViewById(R.id.imgasynctask);
+        img1=findViewById(R.id.imgasynctask);
+        img2=findViewById(R.id.img2);
+        img3=findViewById(R.id.img3);
+        img4= findViewById(R.id.img4);
+
     }
 
     public void Download_Image_AsyncTask(View view) throws ExecutionException, InterruptedException {
         DownloadImage obj = new DownloadImage();
         Bitmap bitmap = obj.execute("https://cdn.thinglink.me/api/image/854796788643659778/1240/10/scaletowidt").get();//it will automatically redirect to doInbackground Function
-        imageView.setImageBitmap(bitmap);
+        img1.setImageBitmap(bitmap);
+        img2.setImageBitmap(bitmap);
+        img3.setImageBitmap(bitmap);
+        img4.setImageBitmap(bitmap);
         Log.d("TAG","Back In Main");
 
 

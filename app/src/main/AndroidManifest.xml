@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -18,10 +18,55 @@
         android:label="My App"
         android:supportsRtl="true"
         android:theme="@style/Theme.BscsSectionABatch20"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".testing"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragmentExample.FragmentTask.Fragment4task"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragmentExample.FragmentTask.Fragment3task"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragmentExample.FragmentTask.Fragment2task"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragmentExample.FragmentTask.FragmentTaskMainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SensorExamples.SensorExampleOneMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +81,7 @@
             android:exported="false" />
         <activity
             android:name=".SQLiteExample.ContactList"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,7 +90,7 @@
         </activity>
         <activity
             android:name=".fragmentExample.CommunicationBetweenFragments.CMMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -54,7 +99,7 @@
         </activity>
         <activity
             android:name=".ServiceTask.ServiceTaskMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -63,7 +108,7 @@
         </activity>
         <activity
             android:name=".fragmentExample.staticFragmentExample.StaticFragmentMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,7 +117,7 @@
         </activity>
         <activity
             android:name=".fragmentExample.FragmentExampleOneMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -81,7 +126,7 @@
         </activity>
         <activity
             android:name=".serviceExample.BoundServiceExample.BoundServiceExampleMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -90,7 +135,7 @@
         </activity>
         <activity
             android:name=".serviceExample.serviceExample1MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -101,7 +146,7 @@
             android:name=".CardViewExamples.Cardview_ScrollingActivityMain"
             android:exported="true"
             android:label="@string/title_activity_cardview_scrolling_main"
-            android:theme="@style/Theme.BscsSectionABatch20.NoActionBar">
+            android:theme="@style/Theme.BscsSectionABatch20.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -110,7 +155,7 @@
         </activity>
         <activity
             android:name=".RecyclerViewExample.RecyclerViewMainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -119,7 +164,7 @@
         </activity>
         <activity
             android:name=".PermissionsExamples.PermissionExample1"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -128,7 +173,7 @@
         </activity>
         <activity
             android:name=".asynctaskclassExamples.WebContentDownload"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -137,7 +182,7 @@
         </activity>
         <activity
             android:name=".asynctaskclassExamples.AsyncTaskExample1"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -146,7 +191,7 @@
         </activity>
         <activity
             android:name=".Tasktwo.studentactivitytwo"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -155,7 +200,7 @@
         </activity>
         <activity
             android:name=".Tasktwo.studentactivityone"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -164,7 +209,7 @@
         </activity>
         <activity
             android:name=".Listviewexamples.ImgandTextExample"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -173,7 +218,7 @@
         </activity>
         <activity
             android:name=".Listviewexamples.multiColumnListViewExample"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -182,7 +227,7 @@
         </activity>
         <activity
             android:name=".Listviewexamples.Listviewexample1"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -191,7 +236,7 @@
         </activity>
         <activity
             android:name=".SharedPreferenceExample.SharedPreferenceExample1"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -200,7 +245,7 @@
         </activity>
         <activity
             android:name=".intentexamples.secondactivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -209,7 +254,7 @@
         </activity>
         <activity
             android:name=".intentexamples.intentexamplecaptureimage"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -218,7 +263,7 @@
         </activity>
         <activity
             android:name=".linearlayouttask2"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -232,7 +277,7 @@
             android:theme="@style/Theme.BscsSectionABatch20.NoActionBar" />
         <activity
             android:name=".intentexamples.intentexample1"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -241,7 +286,7 @@
         </activity>
         <activity
             android:name=".LinearLayoutTask1"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -250,7 +295,7 @@
         </activity>
         <activity
             android:name=".mylayoutExamples.tablelayoutExample"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -259,7 +304,7 @@
         </activity>
         <activity
             android:name=".mylayoutExamples.linearlayoutExample"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -268,7 +313,7 @@
         </activity>
         <activity
             android:name=".MythirdActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -277,7 +322,7 @@
         </activity>
         <activity
             android:name=".mySecondActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -286,7 +331,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

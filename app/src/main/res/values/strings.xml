@@ -171,6 +171,8 @@
     <string name="savebtn">Save</string>
     <string name="update">Update </string>
     <string name="deletefromdb">Delete</string>
+    <string name="downloadbtntask">Download</string>
+    <string name="enter_url">Enter URL</string>
     <string-array name="contacts">
         <item>Ali</item>
         <item>Zain</item>
@@ -185,4 +187,6 @@
         <item>Details of Kashif</item>
         <item>Details of Rehman</item>
     </string-array>
+    <string name="title_activity_test">Test</string>
+    <string name="Downlaodbtn">Download</string>
 </resources>
