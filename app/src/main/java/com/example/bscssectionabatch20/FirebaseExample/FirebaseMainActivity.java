@@ -46,10 +46,7 @@ public class FirebaseMainActivity extends AppCompatActivity {
         reference.setValue("my First Message");
         //On data change will run when this message go into db
 
-
-
     }
-
     public void ReadFromFirebase(View view) {
         //Reading data from Firebase
         reference.addValueEventListener(new ValueEventListener() {
