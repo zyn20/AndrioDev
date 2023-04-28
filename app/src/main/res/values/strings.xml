@@ -192,4 +192,5 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_testapp_maps">testappMapsActivity</string>
     <string name="textview1">TextView</string>
+    <string name="edit_text">Edit Text</string>
 </resources>
