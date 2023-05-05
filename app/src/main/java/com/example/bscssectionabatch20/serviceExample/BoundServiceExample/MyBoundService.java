@@ -20,7 +20,7 @@ public class MyBoundService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        mediaPlayer = MediaPlayer.create(this, R.raw.small);
+        mediaPlayer = MediaPlayer.create(this, R.raw.song);
         Log.d(TAG,"Oncreate Method is Called__________");
     }
 
@@ -64,6 +64,37 @@ public class MyBoundService extends Service {
     {
        return mediaPlayer.isPlaying();
     }
+
+    public void backMusic()
+    {
+        if(mediaPlayer!=null)
+        {
+            int currentPosition = mediaPlayer.getCurrentPosition();
+            int backwardTime = 10000; // 10 seconds in milliseconds
+            int newPosition = currentPosition - backwardTime;
+            if (newPosition < 0) {
+                newPosition = 0;
+            }
+            mediaPlayer.seekTo(newPosition);
+        }
+    }
+    public void ForwardMusic()
+    {
+        if (mediaPlayer != null) {
+            int currentPosition = mediaPlayer.getCurrentPosition();
+            int duration = mediaPlayer.getDuration();if (currentPosition + 10000 < duration) {
+                mediaPlayer.seekTo(currentPosition + 10000);
+            } else {
+                mediaPlayer.seekTo(duration);
+            }
+        }
+    }
+    public void Stop()
+    {
+        mediaPlayer.stop();
+        mediaPlayer=MediaPlayer.create(this,R.raw.song);
+    }
+
 
     @Override
     public void onDestroy() {

@@ -193,4 +193,7 @@
     <string name="title_activity_testapp_maps">testappMapsActivity</string>
     <string name="textview1">TextView</string>
     <string name="edit_text">Edit Text</string>
+    <string name="zotify_player">Zotify Player</string>
+    <string name="txtnamerest">Name</string>
+    <string name="txtcontentrest">Content</string>
 </resources>

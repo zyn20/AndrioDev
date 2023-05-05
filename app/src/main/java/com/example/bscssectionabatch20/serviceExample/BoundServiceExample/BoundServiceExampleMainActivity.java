@@ -32,6 +32,7 @@ public class BoundServiceExampleMainActivity extends AppCompatActivity {
         }
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,5 +69,29 @@ public class BoundServiceExampleMainActivity extends AppCompatActivity {
             else myBoundServicePlayer.Play();
         }
 
+    }
+
+    public void backward(View view) {
+        if(myBoundServiceFlag==true) {
+            if (myBoundServicePlayer.isPlaying()) {
+                myBoundServicePlayer.backMusic();
+            }
+        }
+    }
+
+    public void stop(View view) {
+        if (myBoundServiceFlag == true) {
+            if (myBoundServicePlayer.isPlaying()) {
+                myBoundServicePlayer.Stop();
+            }
+        }
+    }
+
+    public void forward(View view) {
+        if(myBoundServiceFlag==true) {
+            if (myBoundServicePlayer.isPlaying()) {
+                myBoundServicePlayer.ForwardMusic();
+            }
+        }
     }
 }
