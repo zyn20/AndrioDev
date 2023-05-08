@@ -196,4 +196,5 @@
     <string name="zotify_player">Zotify Player</string>
     <string name="txtnamerest">Name</string>
     <string name="txtcontentrest">Content</string>
+    <string name="sensor_values">Sensor Values</string>
 </resources>

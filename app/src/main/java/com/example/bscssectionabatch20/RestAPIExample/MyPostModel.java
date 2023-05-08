@@ -42,4 +42,11 @@ public class MyPostModel {
     public void setBody(String body) {
         this.body = body;
     }
+
+    public MyPostModel(float userId, float id, String title, String body) {
+        this.userId = userId;
+        this.id = id;
+        this.title = title;
+        this.body = body;
+    }
 }
