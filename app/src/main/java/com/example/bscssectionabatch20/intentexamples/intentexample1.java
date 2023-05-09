@@ -22,6 +22,5 @@ public class intentexample1 extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
-
     }
 }
