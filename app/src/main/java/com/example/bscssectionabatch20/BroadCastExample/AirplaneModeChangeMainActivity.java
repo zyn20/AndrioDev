@@ -10,6 +10,8 @@ import com.example.bscssectionabatch20.R;
 
 public class AirplaneModeChangeMainActivity extends AppCompatActivity {
 
+    
+
     AirplaneModeChange airplaneModeChange = new AirplaneModeChange();
 
     @Override

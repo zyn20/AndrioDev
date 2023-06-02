@@ -49,9 +49,6 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
         MyMobileList.add(obj5);
         MyMobile obj6=new MyMobile("3310","Nokia","4400");
         MyMobileList.add(obj6);
-
-
-
         adapter.notifyDataSetChanged();
 
     }

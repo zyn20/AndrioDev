@@ -64,15 +64,7 @@ public class SharedPreferenceExample1 extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-       /* if(sharedPreferences.contains("A") && sharedPreferences.contains("B"))
-        {
 
-        }
-        else
-        {
-            Toast.makeText(this, "No Value Found !", Toast.LENGTH_SHORT).show();
-        }
-        */
         int a = sharedPreferences.getInt("A",0);
         String b = sharedPreferences.getString("B",null);
         String c = sharedPreferences.getString("C",null);
